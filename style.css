@@ -1,1 +1,48 @@
-/* Start coding here */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  margin: 0;
+  place-items: center;
+  background: linear-gradient(120deg, #ff6b6b, #6366f1);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.welcome-card {
+  width: min(33vw, calc(100% - 32px));
+  padding: 2.1vw;
+  border-radius: 0.25vw;
+  background: rgb(255 255 255 / 62%);
+  text-align: center;
+}
+
+.welcome-card h1 {
+  margin: 0 0 0.75vw;
+  font-size: 1.6vw;
+}
+
+.welcome-card p {
+  margin: 0;
+  font-size: 1.05vw;
+  line-height: 1.12;
+}
+
+@media (max-width: 500px) {
+  .welcome-card {
+    width: calc(100% - 32px);
+    padding: 24px;
+    border-radius: 4px;
+  }
+
+  .welcome-card h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .welcome-card p {
+    font-size: 15px;
+  }
+}
