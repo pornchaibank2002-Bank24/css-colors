@@ -1,1 +1,40 @@
-/* Start coding here */
+/* จัดโครงสร้าง body ให้อยู่กึ่งกลางหน้าจอ และใส่สีพื้นหลังไล่ระดับแบบ HSL */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    
+    /* สีพื้นหลัง 1: hsl(0, 100%, 70%) ไล่ไปยัง สีพื้นหลัง 2: hsl(240, 100%, 70%) */
+    background: linear-gradient(135deg, hsl(0, 100%, 70%), hsl(240, 100%, 70%));
+  }
+  
+  /* ตกแต่งกล่องข้อความตรงกลางโดยใช้สีกล่องแบบ HSLA */
+  .card {
+    /* สีกล้วย/สีกระจกโปร่งแสงตามโจทย์: hsla(0, 50%, 100%, 0.5) */
+    background-color: hsla(0, 50%, 100%, 0.5);
+    
+    padding: 30px 40px;
+    border-radius: 8px;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    color: #1a1a1a;
+  }
+  
+  /* จัดระยะหัวข้อ */
+  .card h1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  
+  /* จัดระยะเนื้อหา */
+  .card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+  }
